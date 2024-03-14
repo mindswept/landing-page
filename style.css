@@ -1,3 +1,28 @@
+/* html {
+ border-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+} */
+
+body {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.header {
+  background-color: blue;
+}
 .header-container {
   display: flex;
 }
@@ -12,4 +37,32 @@
   flex-direction: column;
 }
 
+.header-button-sign-up {
+  align-self: start;
+}
+.middle {
+  background-color: white;
+}
+
+.middle-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.middle-container-boxes {
+  display: flex; 
+  flex-direction: column;
+}
+
+.middle-container-boxes-list li {
+ border: solid red 1px; 
+}
+
+
+
+
+.quote {
+  background-color: gray;
+}
 
