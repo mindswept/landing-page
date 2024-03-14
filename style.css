@@ -1,0 +1,15 @@
+.header-container {
+  display: flex;
+}
+
+.header-content-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-content-container-left {
+  display: flex;
+  flex-direction: column;
+}
+
+
