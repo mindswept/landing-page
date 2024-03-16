@@ -1,68 +1,120 @@
-/* html {
- border-sizing: border-box;
+ html {
+ box-sizing: border-box;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
-} */
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
 body {
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-container {
+  background-color: #1f2937;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-container-top {
+  padding: 20px 0px;
   margin: 0px;
-  padding: 0px;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-basis: 30%;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
+.hero-header {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.header {
-  background-color: blue;
-}
-.header-container {
+.header-links {
   display: flex;
 }
 
-.header-content-container {
+.header-links > ul {
   display: flex;
-  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
 }
 
-.header-content-container-left {
+.header-logo {
+  color: #F9FAF8;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+.hero-container-bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-content {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-left,
+.hero-right {
+  flex-basis: 50%;
+}
+
+.hero-left {
   display: flex;
   flex-direction: column;
 }
 
-.header-button-sign-up {
-  align-self: start;
-}
-.middle {
-  background-color: white;
-}
-
-.middle-container {
+.hero-right {
   display: flex;
-  flex-direction: column;
-
-}
-
-.middle-container-boxes {
-  display: flex; 
-  flex-direction: column;
-}
-
-.middle-container-boxes-list li {
- border: solid red 1px; 
-}
-
-
-
-
-.quote {
+  justify-content: center;
+  align-items: center;
   background-color: gray;
 }
 
+.image-placeholder-text {
+  font-size: 18px;
+  color: #E5E7EB;
+
+}
+
+.main-title {
+  color: #F9FAF8;
+  font-weight: extra-bold;
+  font-size: 48px;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  color: #E5E7EB;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.hero-sign-up {
+  align-self: start;
+  border-radius: 8px;
+  padding: 6px 25px;
+  color: #F9FAF8;
+  background-color: #3882F6;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
