@@ -19,7 +19,6 @@ body {
 
 .hero-container {
   background-color: #1f2937;
-  height: 40vh;
   display: flex;
   flex-direction: column;
 }
@@ -70,6 +69,8 @@ a {
   width: 900px;
   display: flex;
   justify-content: space-between;
+  margin: 20px 0px 50px 0px;
+  align-self: end;
 }
 
 .hero-left,
@@ -80,6 +81,7 @@ a {
 .hero-left {
   display: flex;
   flex-direction: column;
+  margin-right: 10px;
 }
 
 .hero-right {
@@ -87,6 +89,7 @@ a {
   justify-content: center;
   align-items: center;
   background-color: gray;
+  margin-left: 10px;
 }
 
 .image-placeholder-text {
@@ -117,4 +120,65 @@ a {
   border: none;
   font-size: 14px;
   font-weight: bold;
+}
+
+.information-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.information-container-top {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: extra-bold;
+  color: #1f2937;
+}
+
+.information-container-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.information-container-bottom-boxes,
+.information-container-bottom-text {
+  display: flex;
+  justify-content: space-evenly;
+  width: 900px;
+}
+
+.boxes {
+  border: 3px solid #3882F6;
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.text {
+  width: 150px;
+  height: 75px;
+  text-align: center;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E5E7EB;
+}
+
+.quote {
+  font-size: 36px;
+  font-style: light italic;
+  color: #1F2937;
+  width: 900px;
+}
+
+.author {
+  width: 900px;
+  text-align: end;
 }
